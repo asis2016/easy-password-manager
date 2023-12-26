@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="www.amaharjan.de">
+    <title>Easy Password Manager</title>
+
+    <!-- CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Include Clipboard.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="container py-2 bg-light border-bottom">
+        <div class=" d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Settings</a></li>
+                <li class="nav-item"><a href="https://github.com/asis2016/easy-password-manager"
+                        class="nav-link link-dark px-2">GitHub</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link link-dark px-2">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- 2nd nav -->
+    <header class="container py-3 mb-4 border-bottom">
+        <div class="d-flex flex-wrap justify-content-center">
+            <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <h5>Easy pass manager</h5>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-none">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+    </header>
+    <!-- body content -->
+    <div class="container">
+        <!-- breadcrumb -->
+        <div class="row mb-4">
+            <div class="col">
+                <h6>amaharjan's Primary Vault</h6>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <a href="create.html" class="btn btn-primary btn-sm">+ Add new credential</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>URL</th>
+                            <th></th>
+                        </tr>
+
+                        <!-- Real data will come here. -->
+                        <tr>
+                            <td>Facebook</td>
+                            <td>facebook_user</td>
+                            <td>
+                                <span id="passwordForPost10">facebook_pass</span>
+                                <span class="badge copyToClipboard" id="cpPwdBtnForPost10"
+                                    data-clipboard-target="#passwordForPost10">
+                                    &#128203;
+                                </span>
+                            </td>
+                            <td>
+                                <a href="https://www.facebook.com" target="_blank">www.facebook.com</a>
+                            </td>
+                            <th class="d-flex justify-content-end">
+                                <a href="detail.html" class="btn btn-info btn-sm">Detail</a>&nbsp;
+                                <a href="update.html" class="btn btn-warning btn-sm">Update</a>&nbsp;
+                                <a href="delete.html" class="btn btn-danger btn-sm">Delete</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Gmail</td>
+                            <td>amaharjan@gmail.com</td>
+                            <td>
+                                <span id="passwordForPost10">gmail_pass</span>
+                                <span class="badge copyToClipboard" id="cpPwdBtnForPost10"
+                                    data-clipboard-target="#passwordForPost10">
+                                    &#128203;
+                                </span>
+                            </td>
+                            <td>
+                                <a href="https://www.gmail.com" target="_blank">www.gmail.com</a>
+                            </td>
+                            <th class="d-flex justify-content-end">
+                                <a href="detail.html" class="btn btn-info btn-sm">Detail</a>&nbsp;
+                                <a href="update.html" class="btn btn-warning btn-sm">Update</a>&nbsp;
+                                <a href="delete.html" class="btn btn-danger btn-sm">Delete</a>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new ClipboardJS('#cpPwdBtnForPost10');
+    </script>
+
+</body>
+
+</html>
