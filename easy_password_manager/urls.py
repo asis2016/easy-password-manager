@@ -2,7 +2,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 from passwordmanager.views import (
-    PasswordManagerListView, PasswordManagerCreateView, PasswordManagerDetailView, PasswordManagerUpdateView, PasswordManagerDeleteView, password_manager_logout
+    PasswordManagerListView, 
+    PasswordManagerCreateView, 
+    PasswordManagerDetailView, 
+    PasswordManagerUpdateView, 
+    PasswordManagerDeleteView, password_manager_logout
 )
 
 urlpatterns = [
@@ -14,5 +18,4 @@ urlpatterns = [
     path('<int:pk>/delete/', PasswordManagerDeleteView.as_view(), name='password_manager_delete'),
     path('create', PasswordManagerCreateView.as_view(), name='password_manager_add'),
     path('', PasswordManagerListView.as_view(), name='password_manager_list'),
-
 ]

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="www.amaharjan.de">
+    <title>Easy Password Manager</title>
+
+    <!-- CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="container py-2 bg-light border-bottom">
+        <div class=" d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Settings</a></li>
+                <li class="nav-item"><a href="https://github.com/asis2016/easy-password-manager"
+                        class="nav-link link-dark px-2">GitHub</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link link-dark px-2">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="container py-3 mb-4 border-bottom">
+        <div class="d-flex flex-wrap justify-content-center">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <h5>Easy pass manager</h5>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-none">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+    </header>
+
+    <!-- body content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="text-danger">Are you sure?</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-danger">You are about to delete</p>
+                            <table class="table">
+                                <tr>
+                                    <td>Title</td>
+                                    <td>Facebook </td>
+                                </tr>
+                                <tr>
+                                    <td>Username</td>
+                                    <td>facebook_user </td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>facebook_pass </td>
+                                </tr>
+                                <tr>
+                                    <td>URL</td>
+                                    <td>https://www.facebook.com </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex" style="justify-content: space-between; align-items: center;">
+                                <a href="index.html" class="btn btn-warning">Yes, I'm sure</a>
+                                <a href="index.html">No, take me back</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

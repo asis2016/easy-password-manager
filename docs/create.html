@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="www.amaharjan.de">
+    <title>Easy Password Manager</title>
+
+    <!-- CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="container py-2 bg-light border-bottom">
+        <div class=" d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Settings</a></li>
+                <li class="nav-item"><a href="https://github.com/asis2016/easy-password-manager"
+                        class="nav-link link-dark px-2">GitHub</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-dark px-2">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <header class="container py-3 mb-4 border-bottom">
+        <div class="d-flex flex-wrap justify-content-center">
+            <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <h5>Easy pass manager</h5>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-none">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+    </header>
+    <!-- body content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Add new credential</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="id_name" class="form-label">Title</label>
+                                <input type="text" class="form-control" id="id_name" name="name" maxlength="200"
+                                    required="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="id_username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="id_username" name="username" required="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="id_password" class="form-label">Password</label>
+                                <input type="text" class="form-control" id="id_password" name="password" required="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="id_url" class="form-label">URL</label>
+                                <input type="text" class="form-control" id="id_url" name="url" required="">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex" style="justify-content: space-between; align-items: center;">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <a href="index.html">Go back</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
